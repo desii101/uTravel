@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    :root {
+        --primary: 102 181 255;
+        --background: 235 235 235;
+        --subbackground: 255 255 255;
+        --simple: 0 0 0;
+    }
+
+    :root.dark {
+        --background: 10 10 10;
+        --subbackground: 30 30 30;
+        --simple: 255 255 255;
+    }
+}
+
+@layer components {
+    :root {
+        --chartline: rgb(222, 222, 222);
+        --select-icon: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%2366b5ff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3E%3C/svg%3E");
+        --error-icon: url("data:image/svg+xml;charset=utf-8,%3Csvg%20style%3D%22enable-background%3Anew%200%200%20612%20792%22%20viewBox%3D%220%200%20612%20792%22%20xml%3Aspace%3D%22preserve%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20style%3D%22fill%3A%23dc2626%22%20d%3D%22m382.2%20396.4%20178.6-178.6L484%20141%20305.4%20319.6%20126.8%20141%2050%20217.8l178.6%20178.6L50%20575l76.8%2076.8%20178.6-178.6L484%20651.8l76.8-76.8-178.6-178.6z%22%2F%3E%3C%2Fsvg%3E");
+    }
+
+    :root.dark {
+        --chartline: rgb(55, 55, 55);
+    }
+
+    .dark .Toastify__close-button--light {
+        color: #fff;
+    }
+
+    html,
+    body {
+        font-family: 'Roboto', 'Noto Kufi Arabic', 'Rubik';
+    }
+
+    select,
+    .multi-select {
+        @apply appearance-none bg-no-repeat bg-[length:16px_12px] ltr:bg-[right_0.75rem_center] rtl:bg-[left_0.75rem_center];
+        background-image: var(--select-icon);
+    }
+
+    [data-prefix="fas"] path {
+        pointer-events: none;
+        /*avoids clicking issues*/
+    }
+
+    .invalid-icon {
+        @apply appearance-none bg-no-repeat bg-[length:0.75em] ltr:bg-[right_0.75rem_center] rtl:bg-[left_0.75rem_center];
+        background-image: var(--error-icon);
+    }
+
+    .select-invalid-icon {
+        @apply appearance-none bg-no-repeat bg-[length:0.75em];
+        background-image: var(--select-icon), var(--error-icon);
+    }
+
+    .select-invalid-icon:where([dir="ltr"], [dir="ltr"] *) {
+        background-position: right .75rem center, center right 2.25rem;
+    }
+
+    .select-invalid-icon:where([dir="rtl"], [dir="rtl"] *) {
+        background-position: left .75rem center, center left 2.25rem;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+::-webkit-scrollbar {
+    @apply w-2 [&.data-table]:h-2;
+}
+
+::-webkit-scrollbar-track {
+    @apply rounded-full bg-neutral-300 dark:bg-neutral-600;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-neutral-400;
+
+}
+
+.rdp-root {
+    --rdp-accent-color: rgb(var(--primary)) !important;
+    --rdp-range_middle-background-color: rgb(var(--primary) / 0.25) !important;
+    --rdp-font-family: inherit !important;
+}
+
+[dir="rtl"] .dir-rtl {
+    direction: rtl;
+}
+
+[dir="rtl"] .dir-ltr {
+    direction: ltr;
+}
+
+[dir="rtl"] .recharts-surface {
+    margin-left: 4px;
+    margin-right: 0 !important;
+}
+
+@media only screen and (max-width: 480px) {
+    .Toastify__toast-container {
+        @apply !p-4 !pe-8;
+    }
+
+    .Toastify__toast {
+        @apply !mb-2 !rounded-md;
+    }
+}

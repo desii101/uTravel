@@ -1,0 +1,82 @@
+{
+  "main": {
+    "index": {
+      "dashboard": "דשבורד",
+      "language": "שפה"
+    }
+  },
+  "dashboard": {
+    "header": {
+      "language": "שפה"
+    },
+    "nav": {
+      "overview": "סקירה כללית",
+      "dailyTrips": "טיולים יומיים",
+      "localTrips": "טיולים מקומיים",
+      "clients": "לקוחות",
+      "minimize": "מזער"
+    },
+    "tables": {
+      "clientDeleteWarning": "האם אתה בטוח שברצונך למחוק את {{client}}?",
+      "edit": "עריכה",
+      "delete": "מחיקה",
+      "cancel": "ביטול",
+      "yes": "כן",
+      "no": "לא"
+    },
+    "overview": {
+      "title": "סקירה כללית"
+    },
+    "dailyTrips": {
+      "title": "טיולים יומיים",
+      "create": "יצירה",
+      "noTrips": "אין טיולים!",
+      "card": {
+        "peopleRegistered": "{{count}} הרשמות",
+        "peopleBreakeven": "הרווח מתחיל לאחר {{breakeven}} הרשמות",
+        "ticketPrice": "מחיר כרטיס",
+        "date": "תאריך",
+        "profitableTrip": "הטיול רווחי!",
+        "notProfitableTrip": "הטיול אינו רווחי!",
+        "breakevenTrip": "הטיול בנקודת איזון!",
+        "registeration": "הרשמה",
+        "edit": "עריכה",
+        "cancel": "ביטול",
+        "tripCancelWarning": "האם אתה בטוח שברצונך לבטל את {{trip}}?"
+      }
+    },
+    "localTrips": {
+      "title": "טיולים מקומיים",
+      "create": "יצירה",
+      "noTrips": "אין טיולים!",
+      "card": {
+        "peopleRegistered": "{{count}} הרשמות",
+        "peopleBreakeven": "הרווח מתחיל לאחר {{breakeven}} הרשמות",
+        "ticketPrice": "מחיר כרטיס",
+        "adultPrice": "מבוגר: {{price}}",
+        "childPrice": "ילד: {{price}}",
+        "babyPrice": "תינוק: {{price}}",
+        "date": "תאריך",
+        "profitableTrip": "הטיול רווחי!",
+        "notProfitableTrip": "הטיול אינו רווחי!",
+        "breakevenTrip": "הטיול בנקודת איזון!",
+        "registeration": "הרשמה",
+        "edit": "עריכה",
+        "cancel": "ביטול",
+        "tripCancelWarning": "האם אתה בטוח שברצונך לבטל את {{trip}}?"
+      }
+    },
+    "clients": {
+      "title": "לקוחות",
+      "search": "חיפוש",
+      "add": "הוספה",
+      "noResults": "אין לקוחות!",
+      "id": "מזהה",
+      "name": "שם",
+      "phoneNumber": "מספר טלפון"
+    }
+  },
+  "dialog": {
+    "cancel": "ביטול"
+  }
+}

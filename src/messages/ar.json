@@ -1,0 +1,84 @@
+{
+  "main": {
+    "index": {
+      "dashboard": "لوحة التحكم",
+      "language": "اللغة"
+    }
+  },
+  "dashboard": {
+    "header": {
+      "language": "اللغة"
+    },
+    "nav": {
+      "overview": "نظرة عامة",
+      "dailyTrips": "الرحلات اليومية",
+      "localTrips": "الرحلات الداخلية",
+      "clients": "العملاء",
+      "minimize": "تصغير"
+    },
+    "tables": {
+      "clientDeleteWarning": "هل أنت متأكد أنك تريد حذف {{client}}؟",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "cancel": "إلغاء",
+      "yes": "نعم",
+      "no": "لا"
+    },
+    "overview": {
+      "title": "نظرة عامة"
+    },
+    "dailyTrips": {
+      "title": "الرحلات اليومية",
+      "create": "إنشاء",
+      "noTrips": "لا توجد رحلات!",
+      "card": {
+        "peopleRegistered": "{{count}} تسجيل",
+        "peopleBreakeven": "يبدأ الربح بعد {{breakeven}} تسجيل",
+        "ticketPrice": "سعر التذكرة",
+        "date": "التاريخ",
+        "profitableTrip": "الرحلة مربحة!",
+        "notProfitableTrip": "الرحلة غير مربحة!",
+        "breakevenTrip": "الرحلة عند نقطة التعادل!",
+        "registeration": "تسجيل",
+        "edit": "تعديل",
+        "cancel": "إلغاء",
+        "tripCancelWarning": "هل أنت متأكد أنك تريد إلغاء {{trip}}؟"
+      }
+    },
+    "localTrips": {
+      "title": "الرحلات الداخلية",
+      "create": "إنشاء",
+      "noTrips": "لا توجد رحلات!",
+      "card": {
+        "peopleRegistered": "{{count}} تسجيل",
+        "peopleBreakeven": "يبدأ الربح بعد {{breakeven}} تسجيل",
+        "ticketPrice": "سعر التذكرة",
+        "adultPrice": "بالغ: {{price}}",
+        "childPrice": "طفل: {{price}}",
+        "babyPrice": "رضيع: {{price}}",
+        "date": "التاريخ",
+        "profitableTrip": "الرحلة مربحة!",
+        "notProfitableTrip": "الرحلة غير مربحة!",
+        "breakevenTrip": "الرحلة عند نقطة التعادل!",
+        "registeration": "تسجيل",
+        "edit": "تعديل",
+        "cancel": "إلغاء",
+        "tripCancelWarning": "هل أنت متأكد أنك تريد إلغاء {{trip}}؟"
+      }
+    },
+    "clients": {
+      "title": "العملاء",
+      "search": "بحث",
+      "add": "إضافة",
+      "noResults": "لا يوجد عملاء!",
+      "id": "المعرّف",
+      "name": "الاسم",
+      "phoneNumber": "رقم الهاتف"
+    }
+  },
+  "dialog": {
+    "yes": "نعم",
+    "no": "لا",
+    "cancel": "إلغاء"
+  }
+}

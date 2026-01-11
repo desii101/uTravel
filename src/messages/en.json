@@ -1,0 +1,84 @@
+{
+    "main": {
+        "index": {
+            "dashboard": "Dashboard",
+            "language": "Language"
+        }
+    },
+    "dashboard": {
+        "header": {
+            "language": "Language"
+        },
+        "nav": {
+            "overview": "Overview",
+            "dailyTrips": "Daily Trips",
+            "localTrips": "Local Trips",
+            "clients": "Clients",
+            "minimize": "Minimize"
+        },
+        "tables": {
+            "clientDeleteWarning": "Are you sure that you want to delete {{client}}?",
+            "edit": "Edit",
+            "delete": "Delete",
+            "cancel": "Cancel",
+            "yes": "Yes",
+            "no": "No"
+        },
+        "overview": {
+            "title": "Overview"
+        },
+        "dailyTrips": {
+            "title": "Daily Trips",
+            "create": "Create",
+            "noTrips": "No trips!",
+            "card": {
+                "peopleRegistered": "{{count}} registerations",
+                "peopleBreakeven": "Profit begins after {{breakeven}} registerations",
+                "ticketPrice": "Ticket Price",
+                "date": "Date",
+                "profitableTrip": "Trip is profitable!",
+                "notProfitableTrip": "Trip is not profitable!",
+                "breakevenTrip": "Trip breaks even!",
+                "registeration": "Registeration",
+                "edit": "Edit",
+                "cancel": "Cancel",
+                "tripCancelWarning": "Are you sure that you want to cancel {{trip}}?"
+            }
+        },
+        "localTrips": {
+            "title": "Local Trips",
+            "create": "Create",
+            "noTrips": "No trips!",
+            "card": {
+                "peopleRegistered": "{{count}} registerations",
+                "peopleBreakeven": "Profit begins after {{breakeven}} registerations",
+                "ticketPrice": "Ticket Price",
+                "adultPrice": "Adult: {{price}}",
+                "childPrice": "Child: {{price}}",
+                "babyPrice": "Baby: {{price}}",
+                "date": "Date",
+                "profitableTrip": "Trip is profitable!",
+                "notProfitableTrip": "Trip is not profitable!",
+                "breakevenTrip": "Trip breaks even!",
+                "registeration": "Registeration",
+                "edit": "Edit",
+                "cancel": "Cancel",
+                "tripCancelWarning": "Are you sure that you want to cancel {{trip}}?"
+            }
+        },
+        "clients": {
+            "title": "Clients",
+            "search": "Search",
+            "add": "Add",
+            "noResults": "No clients!",
+            "id": "ID",
+            "name": "Name",
+            "phoneNumber": "Phone Number"
+        }
+    },
+    "dialog": {
+        "yes": "Yes",
+        "no": "No",
+        "cancel": "Cancel"
+    }
+}
