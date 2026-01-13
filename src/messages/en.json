@@ -30,6 +30,7 @@
         "dailyTrips": {
             "title": "Daily Trips",
             "create": "Create",
+            "search": "Search",
             "noTrips": "No trips!",
             "card": {
                 "peopleRegistered": "{{count}} registerations",
@@ -43,11 +44,28 @@
                 "edit": "Edit",
                 "cancel": "Cancel",
                 "tripCancelWarning": "Are you sure that you want to cancel {{trip}}?"
+            },
+            "form": {
+                "createTitle": "Create Trip",
+                "editTitle": "Edit Trip",
+                "title": "Title",
+                "ticket_price": "Ticket Price",
+                "bus_cost": "Bus Cost",
+                "trip_date": "Trip Date",
+                "createSubmit": "Create",
+                "editSubmit": "Edit",
+                "errors": {
+                    "title": "Length should be between 3 and 64 characters!",
+                    "ticket_price": "Should be between 1 and 10,000!",
+                    "bus_cost": "Should be between 1 and 10,000!",
+                    "trip_date": "Please choose a valid date!"
+                }
             }
         },
         "localTrips": {
             "title": "Local Trips",
             "create": "Create",
+            "search": "Search",
             "noTrips": "No trips!",
             "card": {
                 "peopleRegistered": "{{count}} registerations",
@@ -64,6 +82,28 @@
                 "edit": "Edit",
                 "cancel": "Cancel",
                 "tripCancelWarning": "Are you sure that you want to cancel {{trip}}?"
+            },
+            "form": {
+                "createTitle": "Create Trip",
+                "editTitle": "Edit Trip",
+                "title": "Title",
+                "price": "Price",
+                "adult":"Adult",
+                "child":"Child",
+                "baby":"Baby",
+                "bus_cost": "Bus Cost",
+                "from_date": "Trip Start Date",
+                "to_date": "Trip End Date",
+                "createSubmit": "Create",
+                "editSubmit": "Edit",
+                "errors": {
+                    "title": "Length should be between 3 and 64 characters!",
+                    "price": "Should be between 1 and 10,000!",
+                    "bus_cost": "Should be between 1 and 10,000!",
+                    "from_date": "Please choose a start date!",
+                    "to_date": "Please choose an end date!",
+                    "toDateIsLess":"End date must be later than start date!"
+                }
             }
         },
         "clients": {
@@ -80,5 +120,16 @@
         "yes": "Yes",
         "no": "No",
         "cancel": "Cancel"
+    },
+    "calendar": {
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "thisWeek": "This Week",
+        "thisMonth": "This Month",
+        "thisYear": "This Year",
+        "allTime": "All Time",
+        "goodMorning": "Good morning",
+        "goodAfternoon": "Good afternoon",
+        "goodEvening": "Good evening"
     }
 }

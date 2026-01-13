@@ -1,4 +1,4 @@
-const mobileNavMinimizer = () => {
+export const mobileNavMinimizer = () => {
     // hide sidebar on smaller displays - (smallWidth px)
     const screenWidth: number = window.innerWidth;
     const smallWidth: number = 768;
@@ -11,7 +11,7 @@ const mobileNavMinimizer = () => {
  * basically minimizing header logo 'uTravel -> T', sidebar minimized (hidden in mobile),
  * mini-icon is the icon that minimizes the nav, it gets rotated with a nice transition
  */
-const minimizeNav = () => {
+export const minimizeNav = () => {
     const className = document.dir === 'ltr' ? '-rotate-180' : 'rotate-180';
     const miniIcon = document.querySelector('.minimizer-icon');
     const dashNav = document.querySelector('.dash-nav');
@@ -27,7 +27,7 @@ const minimizeNav = () => {
 /**
  * An eventhandler for dropdown menu outer clicks
  */
-const handleHeaderDropdown = (e: React.MouseEvent) => {
+export const handleHeaderDropdown = (e: React.MouseEvent) => {
     const menu = e.currentTarget.nextSibling as HTMLElement;
     if (menu.style.display === 'block')
         return;
@@ -43,5 +43,21 @@ const handleHeaderDropdown = (e: React.MouseEvent) => {
     document.addEventListener('click', handleClicks, true);
 }
 
-export { handleHeaderDropdown, minimizeNav, mobileNavMinimizer };
+export const showCalendar = (id: string) => {
+    const calendar = document.querySelector(`.rdp-wrapper#${id}`) as HTMLDivElement;
+    if (calendar?.classList.contains('flex'))
+        return;
+    else
+        calendar?.classList.replace('hidden', 'flex');
 
+    // clicking outside the calendar or its button would close calendar
+    const clickHandler = (x: MouseEvent) => {
+        if (calendar && !calendar?.contains(x.target as HTMLElement)) {
+            setTimeout(() => { // prevent calendar from triggering once calendar button is clicked
+                calendar?.classList.replace('flex', 'hidden');
+            }, 50);
+            document.removeEventListener('click', clickHandler, true);
+        }
+    }
+    document.addEventListener('click', clickHandler, true);
+}

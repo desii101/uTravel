@@ -1,9 +1,12 @@
 import { Notice } from "@/components/NiceElements";
 import Pagination from "@/components/Pagination";
 import LocalTripCard from "@/components/trips/LocalTripCard";
+import SearchBar from "@/components/trips/SearchBar";
 import { useTranslations } from "@/hooks/useTranslations";
+import { faCirclePlus, faRotate } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
-import { useSearchParams } from "react-router";
+import { Link, useSearchParams } from "react-router";
 
 interface ILocalTrips {
   total_count: number,
@@ -34,12 +37,24 @@ export default function LocalTrips() {
   const [currentPage, setCurrentPage] = useState<number>(parseInt(searchParams.get('page') as string) || 1);;
   const tripsPerPage = 10;
   const handlePagination = (page: number) => setCurrentPage(page);
-  //  const handleRefresh = () => console.log('refresh');
-
+  const handleRefresh = () => console.log('refresh');
   return (
     <div className="localTrips">
-      <h1 className="text-2xl font-medium">{t('title')}</h1>
-      {/* <SearchBar handleRefresh={handleRefresh} handlePagination={handlePagination} currentPage={currentPage} /> */}
+      <h1 className="text-2xl font-medium pt-3 pb-2">{t('title')}</h1>
+      <div className="flex max-lg:flex-col justify-between">
+        <SearchBar placeholder={t('search')} />
+        <div className="max-lg:w-full max-lg:pt-3 flex gap-2">
+          <span role="button" tabIndex={0} className="bg-primary hover:bg-primary-600 text-white text-center py-2 px-3 rounded-xl cursor-pointer max-lg:w-full" onClick={() => handleRefresh()}>
+            <FontAwesomeIcon icon={faRotate} />
+          </span>
+          <Link to="create" className="w-full lg:w-auto">
+            <button className="font-medium bg-primary hover:bg-primary-600 text-white px-3 py-2 rounded-xl whitespace-nowrap w-full" >
+              <FontAwesomeIcon icon={faCirclePlus} className="pe-2" />
+              <span>{t('create')}</span>
+            </button>
+          </Link>
+        </div>
+      </div>
       <div className={`local-trips grid grid-cols-1 ${localTripsData.local_trips.length > 0 && 'md:grid-cols-2'} rounded-xl py-4 gap-4`}>
         {localTripsData.local_trips.length === 0 ?
           <div className="w-full px-6 py-4 rounded-xl bg-subbackground">

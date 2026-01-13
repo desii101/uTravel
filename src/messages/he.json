@@ -30,6 +30,7 @@
     "dailyTrips": {
       "title": "טיולים יומיים",
       "create": "יצירה",
+      "search": "חיפוש",
       "noTrips": "אין טיולים!",
       "card": {
         "peopleRegistered": "{{count}} הרשמות",
@@ -43,11 +44,28 @@
         "edit": "עריכה",
         "cancel": "ביטול",
         "tripCancelWarning": "האם אתה בטוח שברצונך לבטל את {{trip}}?"
+      },
+      "form": {
+        "createTitle": "יצירת טיול",
+        "editTitle": "עריכת טיול",
+        "title": "כותרת",
+        "ticket_price": "מחיר כרטיס",
+        "bus_cost": "עלות אוטובוס",
+        "trip_date": "תאריך הטיול",
+        "createSubmit": "יצירה",
+        "editSubmit": "עריכה",
+        "errors": {
+          "title": "האורך חייב להיות בין 3 ל־64 תווים!",
+          "ticket_price": "חייב להיות בין 1 ל־10,000!",
+          "bus_cost": "חייב להיות בין 1 ל־10,000!",
+          "trip_date": "נא לבחור תאריך תקין!"
+        }
       }
     },
     "localTrips": {
       "title": "טיולים מקומיים",
       "create": "יצירה",
+      "search": "חיפוש",
       "noTrips": "אין טיולים!",
       "card": {
         "peopleRegistered": "{{count}} הרשמות",
@@ -64,6 +82,28 @@
         "edit": "עריכה",
         "cancel": "ביטול",
         "tripCancelWarning": "האם אתה בטוח שברצונך לבטל את {{trip}}?"
+      },
+      "form": {
+        "createTitle": "יצירת טיול",
+        "editTitle": "עריכת טיול",
+        "title": "כותרת",
+        "price": "מחיר",
+        "adult": "מבוגר",
+        "child": "ילד",
+        "baby": "תינוק",
+        "bus_cost": "עלות אוטובוס",
+        "from_date": "תאריך תחילת הטיול",
+        "to_date": "תאריך סיום הטיול",
+        "createSubmit": "יצירה",
+        "editSubmit": "עריכה",
+        "errors": {
+          "title": "האורך חייב להיות בין 3 ל־64 תווים!",
+          "price": "חייב להיות בין 1 ל־10,000!",
+          "bus_cost": "חייב להיות בין 1 ל־10,000!",
+          "from_date": "נא לבחור תאריך התחלה!",
+          "to_date": "נא לבחור תאריך סיום!",
+          "toDateIsLess": "תאריך הסיום חייב להיות מאוחר מתאריך ההתחלה!"
+        }
       }
     },
     "clients": {
@@ -77,6 +117,19 @@
     }
   },
   "dialog": {
+    "yes": "כן",
+    "no": "לא",
     "cancel": "ביטול"
+  },
+  "calendar": {
+    "today": "היום",
+    "yesterday": "אתמול",
+    "thisWeek": "השבוע",
+    "thisMonth": "החודש",
+    "thisYear": "השנה",
+    "allTime": "כל הזמן",
+    "goodMorning": "בוקר טוב",
+    "goodAfternoon": "צהריים טובים",
+    "goodEvening": "ערב טוב"
   }
 }

@@ -30,6 +30,7 @@
     "dailyTrips": {
       "title": "الرحلات اليومية",
       "create": "إنشاء",
+      "search": "بحث",
       "noTrips": "لا توجد رحلات!",
       "card": {
         "peopleRegistered": "{{count}} تسجيل",
@@ -43,11 +44,28 @@
         "edit": "تعديل",
         "cancel": "إلغاء",
         "tripCancelWarning": "هل أنت متأكد أنك تريد إلغاء {{trip}}؟"
+      },
+      "form": {
+        "createTitle": "إنشاء رحلة",
+        "editTitle": "تعديل الرحلة",
+        "title": "العنوان",
+        "ticket_price": "سعر التذكرة",
+        "bus_cost": "تكلفة الباص",
+        "trip_date": "تاريخ الرحلة",
+        "createSubmit": "إنشاء",
+        "editSubmit": "تعديل",
+        "errors": {
+          "title": "يجب أن يكون الطول بين 3 و 64 حرفًا!",
+          "ticket_price": "يجب أن يكون بين 1 و 10,000!",
+          "bus_cost": "يجب أن يكون بين 1 و 10,000!",
+          "trip_date": "يرجى اختيار تاريخ صالح!"
+        }
       }
     },
     "localTrips": {
       "title": "الرحلات الداخلية",
       "create": "إنشاء",
+      "search": "بحث",
       "noTrips": "لا توجد رحلات!",
       "card": {
         "peopleRegistered": "{{count}} تسجيل",
@@ -64,6 +82,28 @@
         "edit": "تعديل",
         "cancel": "إلغاء",
         "tripCancelWarning": "هل أنت متأكد أنك تريد إلغاء {{trip}}؟"
+      },
+      "form": {
+        "createTitle": "إنشاء رحلة",
+        "editTitle": "تعديل الرحلة",
+        "title": "العنوان",
+        "price": "السعر",
+        "adult": "بالغ",
+        "child": "طفل",
+        "baby": "رضيع",
+        "bus_cost": "تكلفة الباص",
+        "from_date": "تاريخ بدء الرحلة",
+        "to_date": "تاريخ انتهاء الرحلة",
+        "createSubmit": "إنشاء",
+        "editSubmit": "تعديل",
+        "errors": {
+          "title": "يجب أن يكون الطول بين 3 و 64 حرفًا!",
+          "price": "يجب أن يكون بين 1 و 10,000!",
+          "bus_cost": "يجب أن يكون بين 1 و 10,000!",
+          "from_date": "يرجى اختيار تاريخ البداية!",
+          "to_date": "يرجى اختيار تاريخ النهاية!",
+          "toDateIsLess": "يجب أن يكون تاريخ النهاية بعد تاريخ البداية!"
+        }
       }
     },
     "clients": {
@@ -80,5 +120,16 @@
     "yes": "نعم",
     "no": "لا",
     "cancel": "إلغاء"
+  },
+  "calendar": {
+    "today": "اليوم",
+    "yesterday": "أمس",
+    "thisWeek": "هذا الاسبوع",
+    "thisMonth": "هذا الشهر",
+    "thisYear": "هذا العام",
+    "allTime": "كل الوقت",
+    "goodMorning": "صباح الخير",
+    "goodAfternoon": "مساء الخير",
+    "goodEvening": "مساء الخير"
   }
 }

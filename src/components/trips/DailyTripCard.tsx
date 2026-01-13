@@ -61,7 +61,7 @@ export default function DailyTripCard({ id, title, peopleCount, peopleBreakeven,
                     </div>
                 </div>
                 <div className="buttons flex max-lg:flex-col gap-3 pt-4">
-                    <Button className="w-full bg-green-500" onClick={() => navigate(`${id}/registeration`)}>
+                    <Button className="w-full !bg-green-500" onClick={() => navigate(`${id}/registeration`)}>
                         <FontAwesomeIcon icon={faAddressBook} />
                         <span className="ps-2 font-medium">{t('registeration')}</span>
                     </Button>

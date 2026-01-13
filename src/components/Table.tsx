@@ -198,7 +198,7 @@ function TableRow<T>({ elements, tableRowType, cursorHover = false, onClick }: T
                     return <td className="px-6 py-4" key={i}>{element[1]}</td>
             })}
             {tableRowType !== undefined &&
-                <td className="px-6 py-4 flex gap-4">
+                <td className="px-6 py-4 flex gap-4 justify-end">
                     <TableButtonsHandler type={tableRowType} element={elements as unknown as TableType} />
                 </td>
             }
